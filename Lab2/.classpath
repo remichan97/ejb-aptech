@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Lab2-ejb/src/java"/>
+	<classpathentry kind="src" path="Lab2-war/src/java"/>
+	<classpathentry kind="lib" path="build/Lab2-ejb.jar"/>
+	<classpathentry kind="lib" path="build/lib/mysql-connector-java-8.0.29.jar"/>
+	<classpathentry kind="lib" path="dist/gfdeploy/Lab2/lib/mysql-connector-java-8.0.29.jar"/>
+	<classpathentry kind="lib" path="Lab2-ejb/dist/Lab2-ejb.jar"/>
+	<classpathentry kind="lib" path="Lab2-war/build/lib/mysql-connector-java-8.0.29.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-8.0.29.jar"/>
+	<classpathentry kind="output" path="Lab2-ejb/build/classes"/>
+</classpath>

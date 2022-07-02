@@ -13,6 +13,8 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <a href="addnew.jsp">Add new</a>
+
         <table style="border: thin solid black;">
             <tr>
                 <th>Roll No.</th>
@@ -26,8 +28,8 @@
                     <td>${sv.rollId}</td>
                     <td>${sv.fullName}</td>
                     <td>${sv.className}</td>
-                    <td><a href="update?roll=${sv.rollId}">Update</a></td>
-                    <td><a href="delete?roll=${sv.rollId}" onclick="return confirm('Would you like to delete this student information?')">Delete</a></td>
+                    <td><a href="GetUpdate?roll=${sv.rollId}">Update</a></td>
+                    <td><a href="DeleteServlet?roll=${sv.rollId}" onclick="return confirm('Would you like to delete this student information?')">Delete</a></td>
                 </tr>
             </c:forEach>
     </body>
