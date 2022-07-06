@@ -4,11 +4,11 @@
  */
 package Beans;
 
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
+import javax.interceptor.Interceptors;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import model.SinhVien;
@@ -19,6 +19,7 @@ import model.SinhVien;
  */
 @Stateless
 @LocalBean
+@Interceptors(value = {Intercept.SinhVienInterceptor.class})
 public class SinhVienBean {
 
     private EntityManager em;
